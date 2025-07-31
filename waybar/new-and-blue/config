@@ -1,0 +1,101 @@
+{
+  
+  "output": "HDMI-A-1",
+  "margin-top" : 15,
+  "margin-left": 15,
+  "margin-right": 15,
+  "height" : 35,
+    
+  "include": [
+      "~/.config/waybar/modules.json"
+  ],
+    
+    "modules-left": [
+      "hyprland/workspaces",
+    ],
+    
+    "modules-center": [
+      "hyprland/window",
+    ],
+    
+    "modules-right": [
+      "custom/waypaper",
+      "pulseaudio",
+      "memory",
+      "network",
+      "clock",
+      "custom/exit",
+    ],
+    "hyprland/window": {
+      "format": "{}",
+      "max-length": 35,
+      "rewrite": {
+        "": ""
+      },
+      "separate-outputs": true,
+    },
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "on-click": "activate",
+      "format-icons": {
+      },
+      "sort-by-number": true,
+      "persistent-workspaces": {
+        "DP-2": 1,
+        "HDMI-A-1": 5,
+      },
+    },
+    "clock": {
+      "format": "{:%Y-%m-%d %H:%M}",
+      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+      "format-alt": "{:%H:%M}",
+    },
+    "cpu": {
+      "format": "  {usage}%",
+      "tooltip": false
+    },
+    "memory": {
+      "format": "{}% "
+    },
+    "temperature": {
+      "critical-threshold": 80,
+      "format": "{icon} {temperatureC}°C",
+      "format-icons": ["", "", ""]
+    },
+    "battery": {
+      "states": {
+        "warning": 30,
+        "critical": 15
+      },
+      "format": "{icon}  {capacity}%",
+      "format-full": "{icon}  {capacity}%",
+      "format-charging": "  {capacity}%",
+      "format-plugged": "  {capacity}%",
+      "format-alt": "{time} {icon}",
+      "format-icons": ["", "", "", "", ""]
+    },
+    "network": {
+      "format-wifi": "  {signalStrength}%",
+      "format-ethernet": "{bandwidthTotalBits} 󰈀",
+      "tooltip-format": " {ifname} via {gwaddr}",
+      "format-linked": " {ifname} (No IP)",
+      "format-disconnected": " ⚠ ",
+      "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "pulseaudio": {
+      "format": "{volume}% {icon}",
+      "format-bluetooth": "{volume}% {icon} {format_source}",
+      "format-bluetooth-muted": " {icon} {format_source}",
+      "format-muted": "",
+      "format-icons": {
+        "headphone": "",
+        "hands-free": "",
+        "headset": "",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": ["", "", ""]
+      },
+      "on-click": "pavucontrol"
+    },
+}

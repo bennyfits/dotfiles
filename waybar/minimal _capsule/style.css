@@ -1,0 +1,104 @@
+* {
+  font-family: "MonaspiceAr Semibold", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.25px;
+  min-height: 0;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.modules-right,
+.modules-left,
+.modules-center {
+  margin-top: 15px;
+}
+
+#pulseaudio,
+#memory,
+#network,
+#clock,
+#custom-waypaper,
+#custom-hyprshot,
+#custom-exit,
+#workspaces,
+#window {
+  background: rgba(15, 10, 38, 0.85);
+}
+
+
+/* Workspaces */
+#workspaces {
+  border-radius: 25px;
+  padding: 4px 12px;
+}
+
+#workspaces button {
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 0;
+  margin: 2px 4px 3px;
+}
+
+#workspaces button.active,
+#workspaces button:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+#workspaces button.urgent {
+  border-radius: 50%;
+}
+
+tooltip {
+  opacity: 0;
+}
+
+/* Window Title */
+#window {
+  background: rgba(15, 10, 38, 1);
+  padding: 2px 16px;
+  border-radius: 25px;
+}
+
+/* Right side modules */
+#pulseaudio,
+#memory,
+#network,
+#clock,
+#custom-waypaper,
+#custom-hyprshot,
+#custom-exit {
+  border-radius: 25px;
+  margin: 0 0 0 6px;
+  padding: 2px 12px;
+}
+
+#workspaces button,
+#pulseaudio,
+#memory,
+#network,
+#clock,
+#window {
+  font-size: 11px;
+}
+
+#custom-waypaper {
+  padding: 4px 12px 4px 10px;
+  margin: 0 12px 0 0;
+}
+
+#custom-hyprshot {
+  padding: 4px 13px 4px 7px;
+  margin: 0 12px 0 0;
+}
+
+#custom-exit {
+  padding: 4px 12px 4px 8px;
+  margin: 0 0 0 16px;
+}
+
+#pulseaudio {
+  padding: 4px 12px;
+}

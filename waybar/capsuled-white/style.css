@@ -1,0 +1,145 @@
+@import "benny.css";
+
+* {
+  font-family: "MonaspiceAr Semibold", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.25px;
+  min-height: 0;
+}
+
+window#waybar {
+  transition-duration: .5s;
+  background: transparent;
+}
+.modules-right,
+.modules-left,
+.modules-center,
+tooltip {
+  background-color: @background;
+  border-radius: 8px;
+}
+
+.modules-right,
+.modules-left,
+.modules-center {
+  margin-top: 8px;
+} 
+
+.modules-right {
+  padding: 0 6px 3px;
+}
+
+.modules-center {
+  font-size: 6px;
+  padding: 3px;
+}
+
+.modules-left {
+  padding: 3px 15px 4px;
+}
+
+button {
+  border: none;
+  margin: 0 2px;
+  padding: 0;
+}
+
+#workspaces {
+  padding: 1px 2px  2px;
+}
+
+#workspaces button {
+  background: rgba(0,0,0,0);
+  font-size: 10px;
+  padding: 2px;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+
+#workspaces button:hover {
+  background: #3f3f3f;
+}
+#workspaces button.active,
+#workspaces button:hover,
+#workspaces button.focused {
+  /*background-color: @lavender;
+  box-shadow: inset 0 -3px #ffffff; */
+  background: #dedede;
+  color: @background;
+}
+
+#workspaces button.urgent {
+  background-color: #eb4d4b;
+}
+
+#mode {
+  background-color: #64727D;
+  box-shadow: inset 0 -3px #ffffff;
+}
+
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#custom-exit
+#custom-waypaper  {
+  padding: 0 7px 0;
+  margin: 3px 2px 0 0;
+  border-radius: 8px;
+}
+
+#custom-waypaper {
+  font-size: 18px;
+  color: #0087b0;
+  color: #ffffff;
+  border-radius: 8px;
+  margin: 2px 5px 0 1px;
+  min-width: 25px;
+}
+
+#custom-waypaper:hover {
+  color: #20add7;
+  color: #ffffff;
+}
+
+#custom-exit {
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 8px;
+  margin: 4px 5px 0 1px;
+  min-width: 25px;
+}
+
+#custom-exit:hover {
+  color: #9c0528;
+  color: #ffffff;
+}
+
+#pulseaudio {
+  color: #ff2c5d;
+  color: #ffffff;
+}
+
+#network {
+  padding: 0 7px 0;
+  color: #7148f9;
+  color: #ffffff;
+}
+
+#temperature {
+  color: @sky;
+}
+
+#clock {
+  padding: 5px 7px 0;
+  color: #fb360f;
+  color: #dedede;
+}
+
+#memory {
+  color: #00b009;
+  color: #dedede;
+}

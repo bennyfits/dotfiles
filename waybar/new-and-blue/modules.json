@@ -1,0 +1,18 @@
+{  
+  "custom/exit": {
+    "format": "",
+    "on-click": "wlogout -p layer-shell",
+    "on-click-right": "hyprlock",
+    "tooltip-format": "Logout",
+   },
+  "custom/waypaper": {
+    "format": "󰋩",
+    "on-click": "waypaper",
+    "tooltip-format": "Change Wallpaper",
+  },
+  "custom/hyprshot": {
+    "format": "󰹑",
+    "on-click": "hyprshot -m region --clipboard-only",
+    "tooltip-format": "",
+  }
+}

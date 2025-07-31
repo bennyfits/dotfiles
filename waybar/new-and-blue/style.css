@@ -1,0 +1,165 @@
+* {
+  font-family: "MonaspiceAr Semibold", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.25px;
+  min-height: 0;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.modules-right,
+.modules-left,
+.modules-center {
+  padding: 5px 0;
+}
+
+.modules-center {
+}
+
+.modules-left {
+}
+
+.modules-right {
+}
+
+#pulseaudio,
+#memory,
+#network,
+#clock,
+#custom-waypaper,
+#custom-hyprshot,
+#custom-exit,
+#workspaces,
+#window {
+  padding: 1px 16px;
+  background: rgba(15, 10, 38, 0.825);
+}
+
+
+/* Workspaces */
+#workspaces {
+  border-radius: 8px;
+  padding: 1px 12px;
+}
+
+#workspaces button {
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 0;
+  margin: 4px 1px;
+}
+
+#workspaces button:hover {
+  transition: all 0.25s ease-in-out;
+  background: rgba(61, 52, 109, 0.7);
+  color: #ffffff;
+  margin-top: 3px;
+}
+
+#workspaces button.active {
+  transition: all 0.5s ease-in-out;
+  background: #10addd;
+  color: #000000;
+  margin-top: 2px;
+}
+
+#workspaces button.urgent {
+  border-radius: 8px;
+}
+
+tooltip {
+  opacity: 0;
+}
+
+/* Window Title */
+#window {
+  padding: 0 16px;
+  border-radius: 8px;
+}
+
+/* Right side modules */
+#pulseaudio,
+#memory,
+#network,
+#clock,
+#custom-waypaper,
+#custom-hyprshot,
+#custom-exit {
+  border-radius: 8px;
+  margin: 0 0 0 6px;
+}
+
+
+#pulseaudio:hover,
+#memory:hover,
+#network:hover,
+#clock:hover,
+#custom-waypaper:hover,
+#custom-hyprshot:hover {
+  transition: all 0.5s ease-in-out;
+  background: rgba(15, 10, 38, 0.95);
+}
+
+#custom-exit:hover {
+
+}
+
+#workspaces button,
+#pulseaudio,
+#memory,
+#network,
+#clock,
+#window {
+  font-size: 11px;
+}
+
+#memory {
+  color: #eeec79;
+  /* padding: 2px 16px 2px 12px; */
+}
+
+#pulseaudio {
+  color: #10addd;
+}
+
+#network {
+  color: #5cd35c;
+  /* padding: 2px 16px 2px 12px; */
+}
+
+#network.disconnected {
+  color: #ec4646;
+}
+
+#custom-waypaper {
+  color: #70da63;
+  padding: 1px 12px 0 8px;
+  margin: 0 25px 0 0;
+}
+
+#custom-exit {
+  color: #ff7676;
+  /* padding: 4px 12px 4px 8px; */
+  padding: 1px 12px 0 8px;
+  margin: 0 0 0 25px;
+}
+
+#custom-exit label {
+  padding: 0;
+}
+
+#custom-exit:hover {
+  transition: all 0.5s ease-in-out;
+  background: #a32929;
+  color: rgba(15, 10, 38, 1);
+}
+
+#pulseaudio {
+  padding: 1px 16px 1px 8px;
+}
+
+#clock {
+  padding: 2px 12px 0;
+}

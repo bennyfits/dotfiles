@@ -1,0 +1,21 @@
+# -----------------------------------------------------
+# AUTOSTART
+# -----------------------------------------------------
+
+# -----------------------------------------------------
+# Pywal
+# -----------------------------------------------------
+#cat ~/.cache/wal/sequences
+
+# -----------------------------------------------------
+# Fastfetch
+# -----------------------------------------------------
+
+kitten icat -n --place 50x50@0x0 --align left  ~/.config/fastfetch/images/running-benny_division-md.gif | fastfetch --logo-width 13 --raw -
+
+
+# if [[ $(tty) == *"pts"* ]]; then
+
+#  [[ "$(cat /proc/$PPID/comm)" != "nvim" &&  "$(cat /proc/$PPID/comm)" != "codium" ]] && kitten icat -n --place 50x50@0x0 --align left  ~/.config/fastfetch/images/running-benny_division-md.gif | fastfetch --logo-width 13 --raw -
+
+#fi

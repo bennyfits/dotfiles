@@ -1,0 +1,4 @@
+alias ls='eza -a --icons=always'
+alias vi='vim'
+alias code='vscodium'
+alias waybar-reload='pkill waybar && hyprctl dispatch exec waybar'

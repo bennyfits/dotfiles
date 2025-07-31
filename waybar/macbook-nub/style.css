@@ -1,0 +1,125 @@
+* {
+  font-family: "MonaspiceAr Semibold", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.25px;
+  min-height: 0;
+}
+
+window#waybar {
+  transition-duration: .5s;
+  background: transparent;
+}
+
+
+.modules-right,
+.modules-left,
+.modules-center,
+tooltip {
+  background-color: rgba(0,0,0,1);
+}
+
+.modules-center {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 1px 18px;
+}
+
+.modules-left,
+.modules-right {
+  margin-top: 5px;
+  border-radius: 25px;
+}
+
+.modules-left {
+  padding: 3px 6px;
+}
+
+.modules-right {
+  padding: 3px 6px 4px;
+}
+
+#mode {
+  font-size: 0px;
+}
+
+#workspaces {
+  padding: 2px 8px;
+}
+
+#workspaces button {
+  margin: 0 1px;
+  background: white;
+  font-family: monospace;
+  padding: 0;
+  border-radius: 25px;
+  color: rgba(0,0,0,0);
+}
+
+
+#workspaces button:hover {
+  background: #3f3f3f;
+}
+
+#workspaces button.focused {
+  background: red;
+}
+
+#workspaces button.active {
+  padding: 0 10px;
+}
+
+
+#workspaces button:hover {
+}
+
+
+/* Right Modules */
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#custom-exit
+#custom-waypaper  {
+  color: white;
+  padding: 0 7px 0;
+  margin: 3px 2px 0 0;
+}
+
+#custom-waypaper {
+  font-size: 18px;
+  border-radius: 8px;
+  margin: 2px 5px 0 1px;
+  min-width: 25px;
+}
+
+#custom-exit {
+  font-size: 16px;
+  border-radius: 8px;
+  margin: 4px 5px 0 1px;
+  min-width: 25px;
+}
+
+
+#pulseaudio {
+}
+
+#network {
+  padding: 0 7px 0;
+}
+
+#temperature {
+  color: @sky;
+}
+
+#clock {
+  padding: 5px 7px 0;
+}
+
+#memory {
+}
+
+#memory span {
+  margin-top: -6px;
+}

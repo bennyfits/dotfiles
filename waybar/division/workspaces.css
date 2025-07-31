@@ -1,0 +1,39 @@
+#workspaces {
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  padding: 0px;
+  background: url('line.png') center center repeat-x;
+}
+#workspaces button {
+  all: unset;
+  margin: 0 18px 0 0;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  transition: all .2s ease;
+}
+
+#workspaces button:last-child {
+  margin: 0 2px 0 0;
+}
+
+#workspaces button:hover {
+  color: #8f8f8f;
+  transition: all 1s ease;
+}
+
+#workspaces button:hover
+#workspaces button.empty {
+  color: #ffffff;
+}
+
+
+#workspaces button.active {
+  color: #ff6A13;
+}
+#workspaces button.urgent {
+  color: #dc1818;
+}
+
+#workspaces button.empty:hover {
+  color: #ffffff;
+}

@@ -1,0 +1,125 @@
+
+# Launch HELLDIVERS™ 2 in sfull screen mode
+windowrulev2 =  fullscreen,               class:(steam_app_553850), title:(HELLDIVERS™ 2)
+
+# Luanch Polterguys on the Game Workspace
+windowrulev2 =  fullscreen,               class:(Polterguys.exe)
+windowrulev2 =  workspace 100,            class:(Polterguys.exe)
+
+# Pin Waypaper.
+windowrulev2 = size 800 500,              class:(waypaper)
+windowrulev2 = move 560 -900,             class:(waypaper)
+windowrulev2 = float,                     class:(waypaper)
+# windowrulev2 = pin,                       class:(waypaper)
+
+# Pin Pavucontrol.
+windowrulev2 = size 500 1000,             class:(org.pulseaudio.pavucontrol)
+windowrulev2 = move 1390 50,              class:(org.pulseaudio.pavucontrol)
+windowrulev2 = float,                     class:(org.pulseaudio.pavucontrol)
+
+# Isolate Input Remapper to Workspace 1.
+windowrulev2 = workspace 1,               class:(input-remapper)
+windowrulev2 = float,                     class:(input-remapper), title:Advanced
+windowrulev2 = workspace 1,               class:(input-remapper-gtk)
+windowrulev2 = float,                     class:^(input-remapper-gtk)$, title:^(Advanced)$
+
+# Isolate Polkit to monitor 1 and workspace 1
+windowrulev2 = workspace 1,               class:(io.elementary.desktop.agent-polkit)
+
+# Launch Spirit City Lofi as a tiled bug.
+windowrulev2 = workspace 3,               class:(steam_app_2113850)
+windowrulev2 = tile,                      class:(steam_app_2113850)
+
+windowrulev2 = keepaspectratio,           class:^(steam_app\d+)$
+
+# Launch Photoshop on Workspace 50
+windowrulev2 = workspace 50,              class:(photoshop.exe), title:^(\bAdobe Photoshop.*\b)$
+windowrulev2 = float,                     class:(photoshop.exe), title:^(\bAdobe Photoshop.*\b)$
+windowrulev2 = noinitialfocus,            class:(photoshop.exe), title:^(\bAdobe Photoshop.*\b)$
+
+# Launched Aseprite on Workspace 55
+windowrulev2 = workspace 55,              class:(Aseprite)
+windowrulev2 = tile,                      class:(Aseprite)
+#windowrulev2 = float,                     class:(Aseprite), title:^$
+
+# Give VS Code a default transparency
+windowrule = opacity 0.9 0.85,            title:(.*)(VSCodium)$
+
+# Give Obsdian a default transparency
+windowrule = opacity 0.9 0.99,            class:(obsidian)
+
+# Give Spotify a default transparency
+windowrule = opacity 0.9 0.9,            class:Spotify
+
+# Open Ubisoft Connect on monitor 1 and workspace 1
+windowrulev2 = tile,                      title:(Ubisoft Connect)
+windowrulev2 = monitor 1,                 title:(Ubisoft Connect)
+windowrulev2 = workspacea 1,              title:(Ubisoft Connect)
+
+# Handle agents that should be windowless and move them off screen.
+windowrulev2 = float,                     class:^(steam_app_.*$), title:^\s*$
+windowrulev2 = monitor 1,                 class:^(steam_app_.*$), title:^\s*$
+windowrulev2 = workspace 1,               class:^(steam_app_.*$), title:^\s*$
+windowrulev2 = move 'exact -1000px -1000px',        class:^(steam_app_.*$), title:^\s*$
+
+# Launch Star Wars Outlaws on the Game workspace
+windowrulev2 =  fullscreen,               class:(steam_app_default), title:^(Outlaws)$
+windowrulev2 =  workspace 100,            class:(steam_app_default), title:^(Outlaws)$
+
+
+# Launch Pirate Yakuza in Hawaii on the Game workspace in fullscreen
+windowrulev2 =  fullscreen,               class:(steam_app_3061810)
+windowrulev2 =  workspace 100,            class:(steam_app_3061810)
+
+# Launch Defiance on the Game workspace
+windowrulev2 =  fullscreen,               class:(steam_app_default), title:^(Defiance)$
+windowrulev2 =  workspace 100,            class:(steam_app_default), title:^(Defiance)$
+
+# Launch Star Wars Outlaws on the Game workspace
+windowrulev2 =  fullscreen,               class:(steam_app_default), title:^(Outlaws)$
+windowrulev2 =  workspace 100,            class:(steam_app_default), title:^(Outlaws)$
+
+# Launch Albion Online on the Games Workspace
+windowrulev2 =  workspace 100,            class:^(Albion Online Launcher)$
+windowrulev2 =  fullscreen,               class:^(Albion-Online)$
+windowrulev2 =  workspace 100,            class:^(Albion-Online)$
+
+# Launch Assassin's Creed Shadows on the Game workspace
+# windowrulev2 =  fullscreen,             class:(steam_app_default), title:^(Assassin's Creed Shadows)$
+# windowrulev2 =  workspace 100,          class:(steam_app_default), title:^(Assassin's Creed Shadows)$
+
+# Isolate Battle.net to Workspace 1
+windowrule = float,                     title:^(Battle.net)$
+windowrule = size 1860 976,             title:^(Battle.net)$
+windowrule = move 30 -1027,             title:^(Battle.net)$
+windowrule = animation slide top,       title:^(Battle.net)$
+
+# Launch World of Warcraft on the Game workspace
+windowrule =  fullscreen,               title:(World of Warcraft)
+windowrule =  workspace 100,            title:(World of Warcraft)
+
+# Launch Diablo IV on the Game workspace
+windowrule =  fullscreen,               title:(Diablo IV)
+windowrule =  workspace 100,            title:(Diablo IV)
+
+# Launch Overwatch on the Game workspace
+windowrule =  fullscreen,               title:(Overwatch)
+windowrule =  workspace 100,            title:(Overwatch)
+
+# Isolate Battle.net to Workspace 1
+windowrule = float,                     title:^(Battle.net)$
+windowrule = size 1860 976,             title:^(Battle.net)$
+windowrule = move 30 -1027,             title:^(Battle.net)$
+windowrule = animation slide top,       title:^(Battle.net)$
+
+# Launch World of Warcraft on the Game workspace
+windowrule =  fullscreen,               title:(World of Warcraft)
+windowrule =  workspace 100,            title:(World of Warcraft)
+
+# Launch Diablo IV on the Game workspace
+windowrule =  fullscreen,               title:(Diablo IV)
+windowrule =  workspace 100,            title:(Diablo IV)
+
+# Launch Overwatch on the Game workspace
+windowrule =  fullscreen,               title:(Overwatch)
+windowrule =  workspace 100,            title:(Overwatch)
