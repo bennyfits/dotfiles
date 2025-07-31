@@ -1,0 +1,77 @@
+{
+    "[php]": {
+        "editor.tabSize": 4,
+    },
+    
+    "breadcrumbs.enabled": false,
+
+    "chat.commandCenter.enabled": false,
+
+    "editor.lineHeight": 2.15,
+    "editor.letterSpacing": 0.50,
+    "editor.fontFamily": "'JetBrainsMono NF', monospace",
+    "editor.fontSize": 14,
+    "editor.fontWeight": "300",
+    "editor.padding.bottom": 30,
+    "editor.padding.top": 30,
+    "editor.stickyScroll.enabled": false,
+    "editor.minimap.enabled": false,
+    "editor.guides.indentation": false,
+    "editor.renderLineHighlight": "none",
+    "editor.tabSize": 2,
+    "editor.cursorStyle": "block",
+
+    "explorer.decorations.badges": false,
+    "explorer.confirmDelete": false,
+    "explorer.compactFolders": false,
+    "explorer.confirmDragAndDrop": false,
+    
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+
+    "git.decorations.enabled": false,
+    "git.openRepositoryInParentFolders": "never",
+    "git.ignoreMissingGitWarning": true,
+    
+    "window.zoomLevel": 0,
+    "window.customTitleBarVisibility": "never",
+    "window.titleBarStyle": "native",
+    "window.menuBarVisibility": "toggle",
+
+    
+    // Minimalism
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.activityBar.location": "hidden",
+    "workbench.editor.showTabs": "single",
+    "workbench.statusBar.visible": false,
+    "workbench.startupEditor": "none",
+    "workbench.tips.enabled": false,
+    "workbench.tree.enableStickyScroll": false,
+    "workbench.tree.renderIndentGuides": "none",
+    "workbench.tree.indent": 16,
+    "workbench.colorCustomizations": {
+        "editor.background":   "#1b1d2f", // "#0e0d11",
+        "sideBar.background":  "#1b1d2f", // "#0e0d11",
+    },
+
+    "workbench.colorTheme": "Sweet Dracula Monokai",
+
+    "material-icon-theme.hidesExplorerArrows": true,
+    
+    "security.workspace.trust.untrustedFiles": "open",
+
+    
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.env.osx": {},
+    "terminal.integrated.env.windows": {},
+    "terminal.integrated.profiles.linux": {
+        "zsh (login)": {
+        "path": "zsh",
+        "args": ["-l"]
+        }
+    },
+    
+ 
+    "zenMode.fullScreen": false,
+}
